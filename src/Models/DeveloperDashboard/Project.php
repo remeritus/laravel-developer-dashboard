@@ -14,7 +14,6 @@ class Project extends Model
     protected $table = 'ldd_projects';
 
     protected $fillable = [
-        'title'
+        'title',
     ];
-
 }

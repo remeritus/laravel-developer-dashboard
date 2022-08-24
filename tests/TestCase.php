@@ -32,6 +32,5 @@ class TestCase extends Orchestra
 
         $migration = include __DIR__.'/../database/migrations/create_developer_dashboard_tables.php.stub';
         $migration->up();
-
     }
 }

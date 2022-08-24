@@ -4,8 +4,8 @@ namespace Remeritus\LaravelDeveloperDashboard;
 
 use Livewire\Livewire;
 use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\AddProject;
-use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\ShowProject;
 use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\DeveloperDashboard;
+use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\ShowProject;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
