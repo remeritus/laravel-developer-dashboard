@@ -11,7 +11,7 @@ class AddProject extends Component
     public ?string $title = '';
 
     protected array $rules = [
-        'title' => 'required'
+        'title' => 'required',
     ];
 
     public function render(): View
@@ -19,14 +19,12 @@ class AddProject extends Component
         return view('developer-dashboard::livewire.developer-dashboard.add-project');
     }
 
-
-
     public function addNewProject(): void
     {
         $this->validate();
 
         Project::create([
-            'title' => $this->title
+            'title' => $this->title,
         ]);
     }
 }
