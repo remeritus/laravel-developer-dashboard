@@ -3,13 +3,14 @@
 namespace Remeritus\LaravelDeveloperDashboard;
 
 use Livewire\Livewire;
+use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard;
 
 class LaravelDeveloperDashboardServiceProvider extends PackageServiceProvider
 {
-    public function bootingPackage() {
+    public function bootingPackage()
+    {
         Livewire::component('developer-dashboard', DeveloperDashboard::class);
     }
 
