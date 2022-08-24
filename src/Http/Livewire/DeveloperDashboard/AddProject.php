@@ -26,5 +26,8 @@ class AddProject extends Component
         Project::create([
             'title' => $this->title,
         ]);
+
+        $this->emitUp('newProjectAdded', $this->title);
+        $this->reset();
     }
 }
