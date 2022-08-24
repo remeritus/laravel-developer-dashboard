@@ -2,12 +2,17 @@
 
 namespace Remeritus\LaravelDeveloperDashboard;
 
-use Remeritus\LaravelDeveloperDashboard\Commands\LaravelDeveloperDashboardCommand;
+use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard;
 
 class LaravelDeveloperDashboardServiceProvider extends PackageServiceProvider
 {
+    public function bootingPackage() {
+        Livewire::component('developer-dashboard', DeveloperDashboard::class);
+    }
+
     public function configurePackage(Package $package): void
     {
         /*
@@ -18,8 +23,6 @@ class LaravelDeveloperDashboardServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-developer-dashboard')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-developer-dashboard_table')
-            ->hasCommand(LaravelDeveloperDashboardCommand::class);
+            ->hasViews();
     }
 }
