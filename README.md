@@ -21,14 +21,14 @@ composer require remeritus/laravel-developer-dashboard
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-developer-dashboard-migrations"
+php artisan vendor:publish --tag="developer-dashboard-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-developer-dashboard-config"
+php artisan vendor:publish --tag="developer-dashboard-config"
 ```
 
 This is the contents of the published config file:
