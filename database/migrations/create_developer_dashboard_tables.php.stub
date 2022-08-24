@@ -15,10 +15,19 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
+
+        Schema::create('ldd_api_tokens', function(Blueprint $table) :void
+        {
+            $table->id();
+            $table->string('title');
+            $table->string('description')->nullable();
+            $table->string('api_token')->unique();
+        });
     }
 
     public function down()
     {
         Schema::dropIfExists('ldd_projects');
+        Schema::dropIfExists('ldd_api_tokens');
     }
 };

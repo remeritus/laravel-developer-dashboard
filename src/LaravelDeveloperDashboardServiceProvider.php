@@ -27,8 +27,7 @@ class LaravelDeveloperDashboardServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-developer-dashboard')
-            ->hasMigration('create_projects_table')
-            ->runsMigrations()
+            ->hasMigration('create_developer_dashboard_tables')
             ->hasConfigFile()
             ->hasViews();
     }
