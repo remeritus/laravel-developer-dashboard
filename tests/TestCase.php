@@ -3,6 +3,7 @@
 namespace Remeritus\LaravelDeveloperDashboard\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Remeritus\LaravelDeveloperDashboard\LaravelDeveloperDashboardServiceProvider;
 
@@ -21,6 +22,7 @@ class TestCase extends Orchestra
     {
         return [
             LaravelDeveloperDashboardServiceProvider::class,
+            LivewireServiceProvider::class,
         ];
     }
 
