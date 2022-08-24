@@ -1,10 +1,10 @@
 <?php
 
-use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\DeveloperDashboard;
 use function Pest\Livewire\livewire;
 use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\AddProject;
+use Remeritus\LaravelDeveloperDashboard\Http\Livewire\DeveloperDashboard\DeveloperDashboard;
 
-it('has a message about no projects', function (){
+it('has a message about no projects', function () {
     livewire(DeveloperDashboard::class)
         ->assertSeeText('You have no projects.');
 });
